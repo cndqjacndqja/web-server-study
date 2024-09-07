@@ -16,8 +16,8 @@ netty
   > 내가 만든 예시에서는 NioEventLoopGroup(1)을 했으니, 이벤트 루프가 1개이고, 이 이벤트 루프는 ThreadPerTaskExecutor에 의해 생성된 별도의 스레드에서 실행된다.
   > 그 이벤트 루프는 하나의 채널에 할당되어 socket통신을 한다.
   > 이벤트 그룹에서 이벤트를 생성할 때, selector를 생성하고, 이벤트 루프를 생성하고, 이벤트 루프에 selector를 등록한다.
-![스크린샷 2024-09-07 오후 10.51.06.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F_w%2Fh0_zlkpn045gsrtnz617knfm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_vR0Ie1%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-09-07%20%EC%98%A4%ED%9B%84%2010.51.06.png)
-![스크린샷 2024-09-07 오후 10.51.21.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F_w%2Fh0_zlkpn045gsrtnz617knfm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_eMd4Fw%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-09-07%20%EC%98%A4%ED%9B%84%2010.51.21.png)
+![스크린샷 2024-09-07 오후 10.51.06.png](스크린샷 2024-09-07 오후 10.51.06.png)
+![스크린샷 2024-09-07 오후 10.51.21.png](스크린샷 2024-09-07 오후 10.51.21.png)
 
 
 ----
