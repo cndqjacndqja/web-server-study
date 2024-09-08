@@ -1,3 +1,4 @@
 rootProject.name = 'web-server-study'
 include 'netty-server-practice'
+include 'spring-webflux-practice'
 
