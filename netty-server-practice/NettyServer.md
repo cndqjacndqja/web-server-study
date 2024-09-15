@@ -27,6 +27,7 @@ netty
 
 ----
 다시 정리
-> 보통 bossGroup EvnetGroup은 1로 해도 충분하다. 이벤트 루프는 하나의 채널에 할당되어 socket통신을 하는데, 소켓 통신 하는 부분도 OS 자원을 활용해 비동기로 통신하고, 요청 받으면 처리 과정은 어차피 새로운 스레드에 위임하기 때문에 굳이 Selector -> channel -> 스레드로 위임 이 과정을 멀티 스레드로 처리할 필요는 없다. 블로킹 되는 부분도 없고,,
 > bossGroup의 이벤트 루프가 클라이언트 요청 받으면, NioSocketChannel을 생성하고, workerGroup에 등록한다. workerGroup은 이벤트 루프가 코어 개수 * 20개이고(난 디폴트로 설정했고, 내 노트북 CPU 코어 개수가 10개이니,,), 이 이벤트 루프는 ThreadPerTaskExecutor에 의해 생성된 별도의 스레드에서 실행된다.
-> 
+
+> bossGroup의 EventLoop가 selector를 통해 클라이언트 요청을 받고(이때 OS kernel의 selector를 사용한다), workerGroup에 요청에 대한 처리를 넘긴다.
+> workerGroup의 EventLoop는 각각 taskQueue를 가지고 있고, taskQueue에 등록된 작업을 순차적으로 처리한다.
