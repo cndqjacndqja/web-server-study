@@ -6,4 +6,4 @@ Flux, Mono와 같은 Publisher의 구현체를 사용해서 리액티브 프로�
 - 스케줄러의 ExecutorService는 내부 계산 로직같은 경우 기본적으로 forkJoinPool을 사용한다.
 - 외부 I/O 작업 같은 경우는 다른 전략을 사용하여 비동기/논블로킹으로 동작한다. (논블로킹은 OS 레벨에서 지원해야 한다.)
   - webflux에서 reactor 연산자를 사용해서 외부 I/O 작업을 수행할 때는 netty의 이벤트 기반 모델을 사용한다.
-참고: https://d2.naver.com/helloworld/2771091
+참고: https://d2.naver.com/helloworld/2771091, https://projectreactor.io/learn
