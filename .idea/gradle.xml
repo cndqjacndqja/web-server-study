@@ -8,8 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/coroutine-study" />
             <option value="$PROJECT_DIR$/jvm-study" />
             <option value="$PROJECT_DIR$/netty-server-practice" />
+            <option value="$PROJECT_DIR$/reactor-core-practice" />
+            <option value="$PROJECT_DIR$/reactor-netty-pratice" />
             <option value="$PROJECT_DIR$/spring-webflux-practice" />
           </set>
         </option>
